@@ -1,11 +1,14 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
 import { Link } from "react-router-dom"
+import { UserContext } from "../contexts/userContext"
 
 export const HomePage = () => {
 
+    const {name, setName} = useContext(UserContext)
+
     return(
         <>
-            <h1>Bem vindo aos Hooks !</h1>
+            <h1>Bem vindo aos Hooks ! {name}</h1>
             <Link to={"/useState"}>Vá para o UseStatePage</Link>
             <br />
             <Link to={"/useEffect"}>Vá para o UseEffectPage</Link>
