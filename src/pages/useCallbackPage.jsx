@@ -15,7 +15,7 @@ export const UseCallbackPage = () => {
 
     return(
         <>
-            <h2>Bem vindo ao UseEffectPage</h2>
+            <h2>Bem vindo ao UseCallbackPage</h2>
             <input autoComplete="off" type="text" placeholder="Nome" value={name} onChange={onChangeName} />
             <input autoComplete="off" type="password" placeholder="Senha" value={password} onChange={(event) => setPassword(event.target.value)} />
         </>

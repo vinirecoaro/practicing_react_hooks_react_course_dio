@@ -11,6 +11,10 @@ export const HomePage = () => {
             <Link to={"/useEffect"}>Vá para o UseEffectPage</Link>
             <br />
             <Link to={"/useCallback"}>Vá para o UseCallbackPage</Link>
+            <br />
+            <Link to={"/useMemo"}>Vá para o UseMemoPage</Link>
+            <br />
+            <Link to={"/useRef"}>Vá para o UseRefPage</Link>
         </>
     )
 }
